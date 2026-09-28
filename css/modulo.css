@@ -1,0 +1,169 @@
+/* ============================================================
+   MODULO.CSS — usada únicamente por modulo.html
+   Página genérica de teoría + actividades para los 12 módulos.
+   ============================================================ */
+
+.modulo-hero{ padding:44px 0 0; }
+.modulo-head{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  margin-top:14px;
+}
+.modulo-icon{
+  width:58px; height:58px; flex-shrink:0;
+  border-radius:16px;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(150deg, var(--ambar-soft), #fff);
+  color:var(--terracota);
+}
+.modulo-title-wrap{ flex-grow:1; }
+.modulo-badges{ display:flex; align-items:center; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+.modulo-badges .mono{ font-size:0.78rem; color:var(--dark-soft); }
+.modulo-title-wrap h1{ font-size:clamp(1.5rem, 3vw, 2.05rem); margin-bottom:6px; }
+.modulo-summary{ color:var(--dark-soft); font-size:0.98rem; max-width:640px; }
+
+/* Barra de progreso del módulo */
+.modulo-progress-wrap{
+  margin-top:26px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.modulo-progress-wrap.is-complete{ border-color:var(--verde); background:#EAF3EF; }
+.modulo-progress-track{ flex-grow:1; min-width:160px; height:8px; border-radius:999px; background:var(--line); overflow:hidden; }
+.modulo-progress-track-fill{ height:100%; width:0%; background:linear-gradient(90deg, var(--ambar), var(--terracota)); transition:width .35s ease; }
+.modulo-progress-wrap .modulo-progress-label{ font-family:var(--font-mono); font-size:0.8rem; font-weight:700; color:var(--terracota-d); white-space:nowrap; }
+.modulo-reset-btn{
+  font-family:var(--font-mono);
+  font-size:0.76rem;
+  color:var(--dark-soft);
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.modulo-reset-btn:hover{ color:var(--terracota-d); }
+
+.complete-banner{
+  margin-top:14px;
+  background:#EAF3EF;
+  border:1px solid #BFE0D3;
+  color:var(--verde);
+  border-radius:var(--radius-sm);
+  padding:12px 16px;
+  font-size:0.9rem;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* Cuerpo: teoría + actividades */
+.modulo-body{ padding:44px 0 90px; }
+.modulo-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:44px; align-items:flex-start; }
+
+.theory-col{ position:sticky; top:calc(var(--header-h) + 18px); }
+.theory-block{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:22px 24px;
+  margin-bottom:16px;
+}
+.theory-block h3{ font-size:1.02rem; margin-bottom:8px; }
+.theory-block p{ font-size:0.92rem; color:var(--dark-soft); }
+
+.activities-col-title{ margin-bottom:18px; }
+.activities-col-title h2{ font-size:1.2rem; margin-bottom:4px; }
+.activities-col-title p{ font-size:0.88rem; color:var(--dark-soft); }
+
+.activity-card{
+  background:#fff;
+  border:1.5px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:22px 24px;
+  margin-bottom:18px;
+  box-shadow:var(--shadow-soft);
+  transition:border-color .2s ease;
+}
+.activity-card.is-done{ border-color:var(--verde); }
+.activity-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.activity-num{ font-family:var(--font-mono); font-size:0.72rem; font-weight:700; color:var(--terracota-d); text-transform:uppercase; letter-spacing:0.04em; }
+.activity-status{ font-family:var(--font-mono); font-size:0.72rem; color:var(--dark-soft); }
+.activity-card.is-done .activity-status{ color:var(--verde); font-weight:700; }
+.activity-prompt{ font-size:1rem; font-weight:600; margin-bottom:16px; }
+
+.activity-options{ display:flex; flex-direction:column; gap:10px; }
+.activity-options-tf{ flex-direction:row; }
+.activity-option{
+  display:flex; align-items:center; gap:12px;
+  text-align:left;
+  padding:12px 15px;
+  border-radius:var(--radius-sm);
+  border:1.5px solid var(--line);
+  background:#fff;
+  font-size:0.92rem;
+  transition:border-color .18s, background .18s, transform .1s;
+  flex-grow:1;
+}
+.activity-option:hover:not(:disabled){ border-color:var(--terracota); transform:translateX(2px); }
+.activity-option .letter{
+  width:24px; height:24px; flex-shrink:0;
+  border-radius:6px;
+  background:var(--ambar-soft);
+  color:var(--terracota-d);
+  font-family:var(--font-mono);
+  font-weight:700;
+  font-size:0.74rem;
+  display:flex; align-items:center; justify-content:center;
+}
+.activity-option.correct{ border-color:var(--verde); background:#EAF3EF; }
+.activity-option.correct .letter{ background:var(--verde); color:#fff; }
+.activity-option.incorrect{ border-color:var(--rojo-margen); background:#FBEAE6; }
+.activity-option.incorrect .letter{ background:var(--rojo-margen); color:#fff; }
+.activity-option:disabled{ cursor:default; }
+
+.activity-numeric{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.activity-numeric-unit{ font-family:var(--font-mono); font-weight:700; color:var(--dark-soft); }
+.activity-input{
+  flex-grow:1;
+  min-width:140px;
+  font-family:var(--font-mono);
+  font-size:0.95rem;
+  padding:11px 14px;
+  border-radius:var(--radius-sm);
+  border:1.5px solid var(--line);
+  background:#fff;
+  color:var(--dark);
+}
+.activity-input:focus{ border-color:var(--terracota); outline:none; }
+
+.activity-feedback{
+  margin-top:14px;
+  padding:12px 15px;
+  border-radius:var(--radius-sm);
+  font-size:0.86rem;
+  display:none;
+}
+.activity-feedback.show{ display:block; }
+.activity-feedback.ok{ background:#EAF3EF; color:var(--verde); border:1px solid #BFE0D3; }
+.activity-feedback.bad{ background:#FBEAE6; color:var(--rojo-margen); border:1px solid #F0C6BA; }
+
+.modulo-footer-nav{ margin-top:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; }
+
+.modulo-not-found{ padding:90px 0; text-align:center; }
+.modulo-not-found h1{ margin-bottom:10px; }
+.modulo-not-found p{ color:var(--dark-soft); margin-bottom:22px; }
+
+@media (max-width:900px){
+  .modulo-grid{ grid-template-columns:1fr; }
+  .theory-col{ position:static; }
+}
+@media (max-width:560px){
+  .modulo-head{ flex-direction:column; }
+  .activity-options-tf{ flex-direction:column; }
+}

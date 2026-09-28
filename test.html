@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finanzas Personales — FINOVA</title>
+<meta name="description" content="Módulos de educación financiera para jóvenes: teoría corta y actividades prácticas con progreso guardado en tu navegador.">
+<link rel="icon" type="image/jpeg" href="assets/isotipo-finova.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/modulos.css">
+<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="navbar">
+    <a href="index.html" class="brand" aria-label="FINOVA - Inicio">
+      <img src="assets/isotipo-finova.jpg" alt="Isotipo FINOVA" class="brand-mark">
+      <div class="brand-text">
+        <strong>FINOVA</strong>
+        <span>Educación Financiera</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="conceptos.html">Conceptos Básicos</a>
+      <a href="modulos.html">Módulos</a>
+      <a href="test.html" aria-current="page">Finanzas</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="conceptos.html">Conceptos Básicos</a>
+    <a href="modulos.html">Módulos</a>
+    <a href="test.html" aria-current="page">Finanzas</a>
+    <a href="integrantes.html">Integrantes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero ledger-bg">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span class="sep">/</span><span>Finanzas Personales</span></div>
+      <span class="section-tag">03 · Educación financiera para jóvenes</span>
+      <h1 class="section-title">Módulos de finanzas personales</h1>
+      <p class="section-lead">Además de la contabilidad, en FINOVA aprendes a manejar tu propio dinero: presupuesto, ahorro, deudas e inversión. Cada módulo tiene su propia teoría y actividades prácticas.</p>
+    </div>
+  </section>
+
+  <section class="modules">
+    <div class="container">
+      <div class="modules-head">
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-chip active" data-level="todos">Todos</button>
+          <button class="filter-chip" data-level="basico">Básico</button>
+          <button class="filter-chip" data-level="intermedio">Intermedio</button>
+          <button class="filter-chip" data-level="avanzado">Avanzado</button>
+          <button class="filter-chip" data-level="practico">Práctico</button>
+        </div>
+      </div>
+
+      <div class="module-grid" id="moduleGrid">
+        <!-- Módulo 1 -->
+        <article class="module-card reveal" data-level="basico" data-module-id="presupuesto">
+          <span class="module-tab">EF-01</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 4h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M9 2h6v4H9z"/><path d="M9 13l2 2 4-4"/></svg>
+          </div>
+          <h3>Presupuesto Personal</h3>
+          <p>Aprende a organizar tus ingresos y gastos para saber a dónde va cada peso de tu dinero.</p>
+          <div class="module-progress" data-module-id="presupuesto"></div>
+          <div class="module-meta">
+            <span class="level-badge level-basico">Básico</span>
+            <a href="modulo.html?id=presupuesto" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 2 -->
+        <article class="module-card reveal" data-level="basico" data-module-id="ahorro">
+          <span class="module-tab">EF-02</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="13" rx="8" ry="6"/><path d="M12 7V4M9 5l1 2M15 5l-1 2"/><circle cx="16" cy="12" r="1"/><path d="M4 14v3M20 14v3"/></svg>
+          </div>
+          <h3>Ahorro Inteligente</h3>
+          <p>Descubre técnicas sencillas para ahorrar sin sacrificar todo lo que te gusta hacer.</p>
+          <div class="module-progress" data-module-id="ahorro"></div>
+          <div class="module-meta">
+            <span class="level-badge level-basico">Básico</span>
+            <a href="modulo.html?id=ahorro" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 3 -->
+        <article class="module-card reveal" data-level="intermedio" data-module-id="tarjetas">
+          <span class="module-tab">EF-03</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg>
+          </div>
+          <h3>Tarjetas de Crédito y Deudas</h3>
+          <p>Entiende cómo funcionan las tarjetas de crédito y cómo evitar caer en deudas difíciles de pagar.</p>
+          <div class="module-progress" data-module-id="tarjetas"></div>
+          <div class="module-meta">
+            <span class="level-badge level-intermedio">Intermedio</span>
+            <a href="modulo.html?id=tarjetas" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 4 -->
+        <article class="module-card reveal" data-level="intermedio" data-module-id="interes">
+          <span class="module-tab">EF-04</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><rect x="8" y="6" width="8" height="3"/><path d="M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01M16 17h.01"/></svg>
+          </div>
+          <h3>Interés y Cálculos Financieros</h3>
+          <p>Aprende qué es el interés simple y compuesto, y por qué cambia tanto según cómo lo uses.</p>
+          <div class="module-progress" data-module-id="interes"></div>
+          <div class="module-meta">
+            <span class="level-badge level-intermedio">Intermedio</span>
+            <a href="modulo.html?id=interes" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 5 -->
+        <article class="module-card reveal" data-level="avanzado" data-module-id="impuestos">
+          <span class="module-tab">EF-05</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18l-2-1-2 1-2-1-2 1-2-1V3z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+          </div>
+          <h3>Impuestos Básicos</h3>
+          <p>Una introducción sencilla a qué son los impuestos y por qué existen, sin tecnicismos.</p>
+          <div class="module-progress" data-module-id="impuestos"></div>
+          <div class="module-meta">
+            <span class="level-badge level-avanzado">Avanzado</span>
+            <a href="modulo.html?id=impuestos" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 6 -->
+        <article class="module-card reveal" data-level="practico" data-module-id="prestamos">
+          <span class="module-tab">EF-06</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Acuerdos y Préstamos Responsables</h3>
+          <p>Casos prácticos para reconocer un buen o mal acuerdo financiero antes de firmarlo.</p>
+          <div class="module-progress" data-module-id="prestamos"></div>
+          <div class="module-meta">
+            <span class="level-badge level-practico">Práctico</span>
+            <a href="modulo.html?id=prestamos" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer">
+        <div class="footer-brand">
+          <img src="assets/isotipo-finova.jpg" alt="Isotipo FINOVA" class="brand-mark">
+          <strong>FINOVA</strong>
+        </div>
+        <p class="desc">Educación financiera práctica para jóvenes: presupuesto, ahorro e inversión explicados de forma sencilla.</p>
+      </div>
+      <div class="footer">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="conceptos.html">Conceptos Básicos</a></li>
+          <li><a href="modulos.html">Módulos</a></li>
+          <li><a href="test.html">Finanzas</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="https://instagram.com/FINOVA_Oficial" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h5>Recursos</h5>
+        <ul>
+          <li><a href="conceptos.html">Glosario financiero</a></li>
+          <li><a href="modulos.html">Guías descargables</a></li>
+          <li><a href="contacto.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ProtoByte · Aprender sobre dinero es aprender para la vida.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/module-data.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/modulos.js" defer></script>
+<script src="js/cards-progress.js" defer></script>
+</body>
+</html>

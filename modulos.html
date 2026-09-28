@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulos — FINOVA</title>
+<meta name="description" content="Seis módulos formativos: asientos contables, cuentas T, balance de comprobación, kárdex, nómina y Siigo Contable.">
+<link rel="icon" type="image/jpeg" href="assets/isotipo-finova.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/modulos.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="navbar">
+    <a href="index.html" class="brand" aria-label="FINOVA - Inicio">
+      <img src="assets/isotipo-finova.jpg" alt="Isotipo FINOVA" class="brand-mark">
+      <div class="brand-text">
+        <strong>FINOVA</strong>
+        <span>Educación Financiera</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="conceptos.html">Conceptos Básicos</a>
+      <a href="modulos.html" aria-current="page">Módulos</a>
+      <a href="test.html">Finanzas</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="conceptos.html">Conceptos Básicos</a>
+    <a href="modulos.html" aria-current="page">Módulos</a>
+    <a href="test.html">Finanzas</a>
+    <a href="integrantes.html">Integrantes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero ledger-bg">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span class="sep">/</span><span>Módulos</span></div>
+      <span class="section-tag">02 · Ruta formativa</span>
+      <h1 class="section-title">Módulos del curso</h1>
+      <p class="section-lead">Avanza a tu ritmo: cada módulo combina teoría corta, ejemplos reales y un test para poner a prueba lo aprendido.</p>
+    </div>
+  </section>
+
+  <section class="modules">
+    <div class="container">
+      <div class="modules-head">
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-chip active" data-level="todos">Todos</button>
+          <button class="filter-chip" data-level="basico">Básico</button>
+          <button class="filter-chip" data-level="intermedio">Intermedio</button>
+          <button class="filter-chip" data-level="avanzado">Avanzado</button>
+          <button class="filter-chip" data-level="practico">Práctico</button>
+        </div>
+      </div>
+
+      <div class="module-grid" id="moduleGrid">
+        <!-- Módulo 1 -->
+        <article class="module-card reveal" data-level="basico" data-module-id="asientos">
+          <span class="module-tab">MOD-01</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 4.5-9 4.5-9-4.5L12 2z"/><path d="M3 6.5v11L12 22l9-4.5v-11"/><path d="M12 11v11"/></svg>
+          </div>
+          <h3>Asientos Contables y Partida Doble</h3>
+          <p>Aprende a registrar cada operación aplicando el principio de que todo débito tiene su crédito.</p>
+          <div class="module-progress" data-module-id="asientos"></div>
+          <div class="module-meta">
+            <span class="level-badge level-basico">Básico</span>
+            <a href="modulo.html?id=asientos" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 2 -->
+        <article class="module-card reveal" data-level="basico" data-module-id="cuentas-t">
+          <span class="module-tab">MOD-02</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M4 8h16"/><rect x="4" y="8" width="16" height="13"/></svg>
+          </div>
+          <h3>Cuentas T y Dinámica de Cuentas</h3>
+          <p>Comprende cómo aumentan y disminuyen las cuentas de activo, pasivo y patrimonio.</p>
+          <div class="module-progress" data-module-id="cuentas-t"></div>
+          <div class="module-meta">
+            <span class="level-badge level-basico">Básico</span>
+            <a href="modulo.html?id=cuentas-t" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 3 -->
+        <article class="module-card reveal" data-level="intermedio" data-module-id="balance">
+          <span class="module-tab">MOD-03</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-6 8 6v12"/><path d="M4 12h16"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Balance de Comprobación</h3>
+          <p>Verifica que los saldos de todas las cuentas cuadren antes de cerrar el periodo.</p>
+          <div class="module-progress" data-module-id="balance"></div>
+          <div class="module-meta">
+            <span class="level-badge level-intermedio">Intermedio</span>
+            <a href="modulo.html?id=balance" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 4 -->
+        <article class="module-card reveal" data-level="intermedio" data-module-id="kardex">
+          <span class="module-tab">MOD-04</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>
+          </div>
+          <h3>Control de Inventarios y Kárdex</h3>
+          <p>Aplica los métodos PEPS y Promedio Ponderado para valorar mercancías.</p>
+          <div class="module-progress" data-module-id="kardex"></div>
+          <div class="module-meta">
+            <span class="level-badge level-intermedio">Intermedio</span>
+            <a href="modulo.html?id=kardex" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 5 -->
+        <article class="module-card reveal" data-level="avanzado" data-module-id="nomina">
+          <span class="module-tab">MOD-05</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3.2"/><path d="M2.5 21c0-3.5 3-6.2 6.5-6.2s6.5 2.7 6.5 6.2"/><circle cx="18" cy="8" r="2.4"/><path d="M15.5 14.3c2.7.3 4.9 2.7 5 5.7"/></svg>
+          </div>
+          <h3>Liquidación de Nómina y Prestaciones</h3>
+          <p>Calcula salarios, prestaciones sociales y aportes de seguridad social.</p>
+          <div class="module-progress" data-module-id="nomina"></div>
+          <div class="module-meta">
+            <span class="level-badge level-avanzado">Avanzado</span>
+            <a href="modulo.html?id=nomina" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Módulo 6 -->
+        <article class="module-card reveal" data-level="practico" data-module-id="siigo">
+          <span class="module-tab">MOD-06</span>
+          <div class="module-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>
+          </div>
+          <h3>Manejo del Software Siigo Contable</h3>
+          <p>Practica la parametrización y el registro de operaciones en un entorno real de software.</p>
+          <div class="module-progress" data-module-id="siigo"></div>
+          <div class="module-meta">
+            <span class="level-badge level-practico">Práctico</span>
+            <a href="modulo.html?id=siigo" class="module-link">Ver módulo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer">
+        <div class="footer-brand">
+          <img src="assets/isotipo-finova.jpg" alt="Isotipo FINOVA" class="brand-mark">
+          <strong>FINOVA</strong>
+        </div>
+        <p class="desc">Educación financiera práctica para jóvenes: presupuesto, ahorro e inversión explicados de forma sencilla.</p>
+      </div>
+      <div class="footer">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="conceptos.html">Conceptos Básicos</a></li>
+          <li><a href="modulos.html">Módulos</a></li>
+          <li><a href="test.html">Finanzas</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="https://instagram.com/FINOVA_Oficial" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h5>Recursos</h5>
+        <ul>
+          <li><a href="conceptos.html">Glosario financiero</a></li>
+          <li><a href="modulos.html">Guías descargables</a></li>
+          <li><a href="contacto.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ProtoByte · Aprender sobre dinero es aprender para la vida.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/module-data.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/modulos.js" defer></script>
+<script src="js/cards-progress.js" defer></script>
+</body>
+</html>

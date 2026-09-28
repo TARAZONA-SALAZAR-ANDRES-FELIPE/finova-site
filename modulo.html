@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo — FINOVA</title>
+<meta name="description" content="Teoría y actividades prácticas de FINOVA. Tu progreso se guarda automáticamente en este navegador.">
+<link rel="icon" type="image/jpeg" href="assets/isotipo-finova.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/modulo.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="navbar">
+    <a href="index.html" class="brand" aria-label="FINOVA - Inicio">
+      <img src="assets/isotipo-finova.jpg" alt="Isotipo FINOVA" class="brand-mark">
+      <div class="brand-text">
+        <strong>FINOVA</strong>
+        <span>Educación Financiera</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="conceptos.html">Conceptos Básicos</a>
+      <a href="modulos.html">Módulos</a>
+      <a href="test.html">Finanzas</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="conceptos.html">Conceptos Básicos</a>
+    <a href="modulos.html">Módulos</a>
+    <a href="test.html">Finanzas</a>
+    <a href="integrantes.html">Integrantes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Se muestra solo si el ?id= de la URL no existe en module-data.js -->
+  <section class="modulo-not-found" id="moduloNotFound" hidden>
+    <div class="container">
+      <span class="section-tag">Módulo no encontrado</span>
+      <h1>No encontramos este módulo</h1>
+      <p>Puede que el enlace esté mal escrito. Vuelve a la lista de módulos para elegir uno.</p>
+      <a href="modulos.html" class="btn btn-primary">Ver todos los módulos</a>
+    </div>
+  </section>
+
+  <!-- Contenido del módulo, se llena por JS (js/modulo-engine.js) -->
+  <div id="moduloRoot" hidden>
+
+    <section class="modulo-hero ledger-bg">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a><span class="sep">/</span>
+          <a href="modulos.html" id="moduloBreadcrumbCat">Módulos</a><span class="sep">/</span>
+          <span id="moduloCode">MOD-00</span>
+        </div>
+
+        <div class="modulo-head">
+          <div class="modulo-icon"><svg id="moduloIcon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"></svg></div>
+          <div class="modulo-title-wrap">
+            <div class="modulo-badges">
+              <span class="level-badge" id="moduloLevel">Nivel</span>
+            </div>
+            <h1 id="moduloTitle">Cargando módulo...</h1>
+            <p class="modulo-summary" id="moduloSummary"></p>
+          </div>
+        </div>
+
+        <div class="modulo-progress-wrap" id="moduloProgressWrap">
+          <div class="modulo-progress-track"><div class="modulo-progress-track-fill" id="moduloProgressFill"></div></div>
+          <span class="modulo-progress-label" id="moduloProgressText">0/0 actividades completadas</span>
+          <button type="button" class="modulo-reset-btn" id="moduloResetBtn">Reiniciar progreso</button>
+        </div>
+
+        <div class="complete-banner" id="moduloCompleteBanner" hidden>
+          ✓ ¡Completaste este módulo! Tu progreso queda guardado en este navegador.
+        </div>
+      </div>
+    </section>
+
+    <section class="modulo-body">
+      <div class="container modulo-grid">
+
+        <div class="theory-col">
+          <div class="activities-col-title">
+            <h2>Teoría</h2>
+            <p>Lo esencial antes de pasar a la práctica.</p>
+          </div>
+          <div id="moduloTheory"></div>
+        </div>
+
+        <div class="activities-col">
+          <div class="activities-col-title">
+            <h2>Actividades</h2>
+            <p>Resuelve cada una para avanzar tu progreso.</p>
+          </div>
+          <div id="moduloActivities"></div>
+
+          <div class="modulo-footer-nav">
+            <a href="#" class="btn btn-outline" id="moduloBackLink">← Volver</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer">
+        <div class="footer-brand">
+          <img src="assets/isotipo-finova.jpg" alt="Isotipo FINOVA" class="brand-mark">
+          <strong>FINOVA</strong>
+        </div>
+        <p class="desc">Educación financiera práctica para jóvenes: presupuesto, ahorro e inversión explicados de forma sencilla.</p>
+      </div>
+      <div class="footer">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="conceptos.html">Conceptos Básicos</a></li>
+          <li><a href="modulos.html">Módulos</a></li>
+          <li><a href="test.html">Finanzas</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="https://instagram.com/FINOVA_Oficial" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h5>Recursos</h5>
+        <ul>
+          <li><a href="conceptos.html">Glosario financiero</a></li>
+          <li><a href="modulos.html">Guías descargables</a></li>
+          <li><a href="contacto.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ProtoByte · Aprender sobre dinero es aprender para la vida.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/module-data.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/modulo-engine.js" defer></script>
+</body>
+</html>
