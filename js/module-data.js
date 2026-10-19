@@ -68,7 +68,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Compras mercancía por $500.000 y pagas de contado. ¿Cuánto se registra al Debe de la cuenta Inventario?",
-        correctValue: 500000, unit: "$",
+        correctValue: 500.000, unit: "$",
         explanation: "Correcto. El Inventario aumenta por el valor total de la compra: $500.000."
       }
     ]
@@ -109,7 +109,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "El Debe de la cuenta Caja suma $300.000 y el Haber suma $120.000. ¿Cuál es el saldo final?",
-        correctValue: 180000, unit: "$",
+        correctValue: 180.000, unit: "$",
         explanation: "Correcto. 300.000 − 120.000 = 180.000."
       }
     ]
@@ -149,8 +149,8 @@ window.FINOVA_MODULES = [
       },
       {
         id: "a3", type: "numeric",
-        prompt: "Si la suma de los Debe es $2.450.000, ¿cuánto debe sumar el Haber para que el balance cuadre?",
-        correctValue: 2450000, unit: "$",
+        prompt: "Si la suma de los Debe es $450.000, ¿cuánto debe sumar el Haber para que el balance cuadre?",
+        correctValue: 450.000 , unit: "$",
         explanation: "Correcto. Ambas columnas deben sumar exactamente lo mismo."
       }
     ]
@@ -191,7 +191,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Compras 10 unidades a $2.000 y luego 10 unidades a $3.000. ¿Cuál es el costo promedio ponderado por unidad?",
-        correctValue: 2500, unit: "$",
+        correctValue: 2.500, unit: "$",
         explanation: "Correcto. (10×2.000 + 10×3.000) / 20 = 2.500 por unidad."
       }
     ]
@@ -232,7 +232,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Un trabajador gana $1.200.000 mensuales. Si su prima de servicios equivale a medio salario mensual, ¿cuánto recibe de prima?",
-        correctValue: 600000, unit: "$",
+        correctValue: 600.000, unit: "$",
         explanation: "Correcto. 1.200.000 ÷ 2 = 600.000."
       }
     ]
@@ -317,7 +317,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Si ganas $400.000 al mes y sigues la regla 50/30/20, ¿cuánto deberías ahorrar?",
-        correctValue: 80000, unit: "$",
+        correctValue: 80.000, unit: "$",
         explanation: "Correcto. El 20% de 400.000 es 80.000."
       }
     ]
@@ -358,7 +358,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Si ahorras $20.000 cada semana, ¿cuánto habrás ahorrado en 4 semanas?",
-        correctValue: 80000, unit: "$",
+        correctValue: 80.000, unit: "$",
         explanation: "Correcto. 20.000 × 4 = 80.000."
       }
     ]
@@ -441,7 +441,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Prestas $100.000 al 10% de interés simple anual. ¿Cuánto interés generará en un año?",
-        correctValue: 10000, unit: "$",
+        correctValue: 10.000, unit: "$",
         explanation: "Correcto. 100.000 × 10% = 10.000."
       }
     ]
@@ -482,7 +482,7 @@ window.FINOVA_MODULES = [
       {
         id: "a3", type: "numeric",
         prompt: "Un producto cuesta $100.000 más 19% de IVA. ¿Cuánto pagarás de IVA?",
-        correctValue: 19000, unit: "$",
+        correctValue: 19.000, unit: "$",
         explanation: "Correcto. 100.000 × 19% = 19.000."
       }
     ]
